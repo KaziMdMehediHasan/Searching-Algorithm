@@ -1,5 +1,6 @@
 function isUnique(str) {
   let obj = {};
+  // handling the edge case
   if (str === "") {
     return "Invalid String";
   }
