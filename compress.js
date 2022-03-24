@@ -21,4 +21,4 @@ function compress(str) {
   return result;
 }
 
-console.log(compress("aabbbccde"));
+console.log(compress("aabbbccde")); //a2b3c2d1e1
