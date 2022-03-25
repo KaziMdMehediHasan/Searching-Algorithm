@@ -15,7 +15,11 @@ function compress(str) {
   const keys = Object.keys(obj);
   let result = "";
   for (i = 0; i < keys.length; i++) {
-    result += keys[i] + obj[keys[i]];
+    if (obj[keys[i]] === 1) {
+      result += keys[i];
+    } else {
+      result += keys[i] + obj[keys[i]];
+    }
   }
   //   console.log(result);
   return result;

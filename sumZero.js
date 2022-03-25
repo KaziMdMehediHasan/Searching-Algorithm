@@ -26,7 +26,7 @@ console.log(sumZero([-4, -2, 0, 3, 10]));
 function countUniqueValues(arr) {
   if (arr.length === 0) return 0;
   let i = 0;
-  for (let j = 0; j < arr.length; j++) {
+  for (let j = 1; j < arr.length; j++) {
     if (arr[i] !== arr[j]) {
       i++;
       arr[i] = arr[j];
