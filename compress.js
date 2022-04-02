@@ -13,6 +13,11 @@ function compress(str) {
   }
   //   console.log(obj);
   const keys = Object.keys(obj);
+  const arr2 = [];
+  for (let key in obj) {
+    arr2.push(key);
+  }
+  console.log(arr2);
   let result = "";
   for (i = 0; i < keys.length; i++) {
     if (obj[keys[i]] === 1) {
